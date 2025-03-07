@@ -1,0 +1,40 @@
+{
+  "name": "react-native-smart-dimension",
+  "version": "1.0.0",
+  "description": "A simple and lightweight React Native library for responsive dimensions, scaling, and adaptive UI design.",
+  "keywords": [
+    "react-native",
+    "responsive",
+    "dimensions",
+    "scaling",
+    "adaptive-ui",
+    "font-size",
+    "screen-size",
+    "react",
+    "smart-dimensions",
+    "window-dimensions"
+  ],
+  "homepage": "https://github.com/rajshah5599/react-native-smart-dimension#readme",
+  "bugs": {
+    "url": "https://github.com/rajshah5599/react-native-smart-dimension/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajshah5599/react-native-smart-dimension.git"
+  },
+  "license": "ISC",
+  "author": "rajshah5599",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.72.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.72.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
