@@ -1,6 +1,6 @@
 {
   "name": "react-native-smart-dimension",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple and lightweight React Native library for responsive dimensions, scaling, and adaptive UI design.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
