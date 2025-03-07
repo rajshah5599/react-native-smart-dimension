@@ -1,11 +1,5 @@
-/**
- * Utility to calculate percentage-based dimensions
- */
 export const percentageCalculation = (max: number, val: number) => max * (val / 100);
 
-/**
- * Utility to calculate font size based on screen dimensions and aspect ratio
- */
 export const fontCalculation = (height: number, width: number, val: number) => {
     const widthDimension = Math.min(height, width);
     const aspectRatioBasedHeight = (16 / 9) * widthDimension;

@@ -1,12 +1,9 @@
 import { useDimensionsListener } from "./useDimensionsListener";
 import { percentageCalculation, fontCalculation } from "../utils/calculations";
 
-/**
- * General responsive dimension hook
- */
 const useResponsiveDimension = (type: "window" | "screen", value: number, isFont = false) => {
     const dimensions = useDimensionsListener();
-    if (!dimensions || !dimensions[type]) return 0; // Prevent errors
+    if (!dimensions || !dimensions[type]) return 0;
 
     const { height, width } = dimensions[type];
 

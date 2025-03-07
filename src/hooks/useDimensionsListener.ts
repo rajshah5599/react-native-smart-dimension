@@ -13,7 +13,6 @@ export const useDimensionsListener = () => {
         };
 
         const subscription = Dimensions.addEventListener("change", handleDimensionChange);
-
         return () => subscription?.remove?.();
     }, []);
 
