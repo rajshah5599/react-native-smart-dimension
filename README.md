@@ -1,19 +1,19 @@
-# React Native Smart Dimensions
+# React Native Smart dimension
 
-`react-native-smart-dimensions` is a lightweight and flexible library for handling responsive design in React Native applications. It provides hooks to manage device types, screen dimensions, and scalable layouts for various screen sizes, including mobile and tablet devices.
+`react-native-smart-dimension` is a lightweight and flexible library for handling responsive design in React Native applications. It provides hooks to manage device types, screen dimension, and scalable layouts for various screen sizes, including mobile and tablet devices.
 
 ## Installation
 
 You can install the library using npm or yarn:
 
 ```sh
-npm install react-native-smart-dimensions
+npm install react-native-smart-dimension
 ```
 
 or
 
 ```sh
-yarn add react-native-smart-dimensions
+yarn add react-native-smart-dimension
 ```
 
 ## Features
@@ -28,7 +28,7 @@ yarn add react-native-smart-dimensions
 ### 1. Detect Device Type
 
 ```js
-import { useDeviceType } from "react-native-smart-dimensions";
+import { useDeviceType } from "react-native-smart-dimension";
 
 const { isTablet, platform } = useDeviceType();
 console.log(`Device Type: ${isTablet ? "Tablet" : "Mobile"}, Platform: ${platform}`);
@@ -37,17 +37,17 @@ console.log(`Device Type: ${isTablet ? "Tablet" : "Mobile"}, Platform: ${platfor
 ### 2. Listen to Screen Dimension Changes
 
 ```js
-import { useDimensionsListener } from "react-native-smart-dimensions";
+import { usedimensionListener } from "react-native-smart-dimension";
 
-const { screen, window } = useDimensionsListener();
-console.log("Window Dimensions:", window);
-console.log("Screen Dimensions:", screen);
+const { screen, window } = usedimensionListener();
+console.log("Window dimension:", window);
+console.log("Screen dimension:", screen);
 ```
 
 ### 3. Responsive Height & Width
 
 ```js
-import { useResponsiveHeight, useResponsiveWidth } from "react-native-smart-dimensions";
+import { useResponsiveHeight, useResponsiveWidth } from "react-native-smart-dimension";
 
 const height = useResponsiveHeight(50); // 50% of window height
 const width = useResponsiveWidth(80); // 80% of window width
@@ -56,7 +56,7 @@ const width = useResponsiveWidth(80); // 80% of window width
 ### 4. Responsive Font Size
 
 ```js
-import { useResponsiveFontSize } from "react-native-smart-dimensions";
+import { useResponsiveFontSize } from "react-native-smart-dimension";
 
 const fontSize = useResponsiveFontSize(2); // Scales based on screen size
 ```
@@ -64,7 +64,7 @@ const fontSize = useResponsiveFontSize(2); // Scales based on screen size
 ### 5. Table View Layout Helper
 
 ```js
-import { useTableView } from "react-native-smart-dimensions";
+import { useTableView } from "react-native-smart-dimension";
 
 const { columnWidth, gap } = useTableView(3, 5); // 3 columns with 5% gap
 ```
@@ -76,10 +76,10 @@ Returns an object with:
 - `isTablet` (boolean) – Whether the device is a tablet
 - `platform` (string) – Platform type (`ios` or `android`)
 
-### `useDimensionsListener()`
+### `usedimensionListener()`
 Returns an object with:
-- `screen` – Full screen dimensions
-- `window` – Usable window dimensions
+- `screen` – Full screen dimension
+- `window` – Usable window dimension
 
 ### `useResponsiveHeight(value: number)`
 Calculates the responsive height based on percentage.
@@ -88,13 +88,13 @@ Calculates the responsive height based on percentage.
 Calculates the responsive width based on percentage.
 
 ### `useResponsiveFontSize(value: number)`
-Scales the font size based on screen dimensions.
+Scales the font size based on screen dimension.
 
 ### `useTableView(totalColumns: number, gapPercentage: number)`
 Returns column width and gap based on total columns and percentage gap.
 
 ### `percentageCalculation(max: number, val: number)`
-Utility function to calculate percentage-based dimensions.
+Utility function to calculate percentage-based dimension.
 
 ### `fontCalculation(height: number, width: number, val: number)`
 Utility function to calculate font size based on aspect ratio.
